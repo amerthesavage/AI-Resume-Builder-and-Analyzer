@@ -1285,9 +1285,9 @@ class ResumeApp:
             "shafi": "assets/Shafipic.png"
         }
 
-        st.image(image_paths["amer"], caption="Amer")
-        st.image(image_paths["kushendra"], caption="Kushendra")
-        st.image(image_paths["shafi"], caption="Shafi")
+      ###  st.image(image_paths["amer"], caption="Amer")
+       ### st.image(image_paths["kushendra"], caption="Kushendra")
+      ###  st.image(image_paths["shafi"], caption="Shafi")
         
         image_base64s = {name: get_image_as_base64(path) for name, path in image_paths.items()}
         
