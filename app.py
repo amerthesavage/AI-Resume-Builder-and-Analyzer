@@ -1280,10 +1280,14 @@ class ResumeApp:
         
         # Get image paths and convert to base64
         image_paths = {
-            "amer": "D:/CS50P/Smart-AI-Resume-Analyzer/assets/WhatsApp Image 2025-03-07 at 02.51.16_86b27564.jpg",
-            "kushendra": "D:/CS50P/Smart-AI-Resume-Analyzer/assets/kushendra2.png",
-            "shafi": "D:/CS50P/Smart-AI-Resume-Analyzer/assets/Screenshot 2025-04-13 202146.png"
+            "amer": "assets/amerpic.jpg",
+            "kushendra": "assets/Kushpic.png",
+            "shafi": "assets/Shafipic.png"
         }
+
+        st.image(image_paths["amer"], caption="Amer")
+        st.image(image_paths["kushendra"], caption="Kushendra")
+        st.image(image_paths["shafi"], caption="Shafi")
         
         image_base64s = {name: get_image_as_base64(path) for name, path in image_paths.items()}
         
@@ -1539,13 +1543,13 @@ class ResumeApp:
                         <img src="{image_base64s['amer'] if image_base64s['amer'] else 'https://avatars.githubusercontent.com/Hunterdii'}" 
                              alt="Team Member 1" 
                      class="profile-image"
-                     onerror="this.onerror=null; this.src='https://avatars.githubusercontent.com/Hunterdii';">
+                     onerror="this.onerror=null; this.src='https://github.com/amerthesavage';">
                         <h3 class="profile-name">Amer Ali Khan</h3>
                         <p class="profile-title">Team Leader<br>160722733014</p>
                 <div class="social-links">
-                            <a href="https://github.com/Hunterdii" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/amer-ali-khan-0a1b2c3d/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:amer@example.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/amerthesavage" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amer-ali-khan/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:albaik.khan99@gmail.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                     <div class="team-member">
@@ -1555,7 +1559,7 @@ class ResumeApp:
                         <h3 class="profile-name">Yellam Kushendra</h3>
                         <p class="profile-title">Team Member<br>160722733011</p>
                         <div class="social-links">
-                            <a href="https://github.com/kushendra" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="ykushendra77@gmail.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/kushendra-5a6b7c8d/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="mailto:kushendra@example.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
                         </div>
@@ -1568,8 +1572,8 @@ class ResumeApp:
                         <p class="profile-title">Team Member<br>160722733004</p>
                         <div class="social-links">
                             <a href="https://github.com/mohammedshafi" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/mohammed-shafi-1a2b3c4d/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:shafi@example.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/mohamed-shafi-omair-986104295/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:Ms.omair22@gmail.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
