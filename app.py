@@ -1,12 +1,12 @@
 """
-AI Resume Builder & Analyzer - Main Application
+AI-Powered Resume Intelligence System - Main Application
 """
 import streamlit as st
 from jobs.companies import FEATURED_COMPANIES
 
 # Set page config at the very beginning
 st.set_page_config(
-    page_title="AI Resume Builder & Analyzer",
+    page_title="AI-Powered Resume Intelligence System",
     page_icon="🚀",
     layout="wide"
 )
@@ -1280,14 +1280,8 @@ class ResumeApp:
         
         # Get image paths and convert to base64
         image_paths = {
-            "amer": "assets/amerpic.jpg",
-            "kushendra": "assets/Kushpic.png",
-            "shafi": "assets/Shafipic.png"
+            "amer": "assets/amerpic.jpg"
         }
-
-      ###  st.image(image_paths["amer"], caption="Amer")
-       ### st.image(image_paths["kushendra"], caption="Kushendra")
-      ###  st.image(image_paths["shafi"], caption="Shafi")
         
         image_base64s = {name: get_image_as_base64(path) for name, path in image_paths.items()}
         
@@ -1295,7 +1289,7 @@ class ResumeApp:
         
         # Add Font Awesome icons and custom CSS
         st.markdown("""
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">
             <style>
                 .profile-section, .vision-section, .feature-card {
                     text-align: center;
@@ -1530,7 +1524,7 @@ class ResumeApp:
         # Hero Section
         st.markdown("""
             <div class="hero-section">
-                <h1 class="hero-title">About AI Resume Builder & Analyzer</h1>
+                <h1 class="hero-title">About AI-Powered Resume Intelligence System</h1>
                 <p class="hero-subtitle">A powerful AI-driven platform for optimizing your resume</p>
             </div>
         """, unsafe_allow_html=True)
@@ -1545,41 +1539,17 @@ class ResumeApp:
                      class="profile-image"
                      onerror="this.onerror=null; this.src='https://github.com/amerthesavage';">
                         <h3 class="profile-name">Amer Ali Khan</h3>
-                        <p class="profile-title">Team Leader<br>160722733014</p>
+                        <p class="profile-title">Solo Developer<br>Computer Science Engineering Student</p>
                 <div class="social-links">
                             <a href="https://github.com/amerthesavage" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/amer-ali-khan/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="mailto:albaik.khan99@gmail.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <img src="{image_base64s['kushendra'] if image_base64s['kushendra'] else 'https://via.placeholder.com/200'}" 
-                             alt="Team Member 2" 
-                             class="profile-image">
-                        <h3 class="profile-name">Yellam Kushendra</h3>
-                        <p class="profile-title">Team Member<br>160722733011</p>
-                        <div class="social-links">
-                            <a href="ykushendra77@gmail.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/kushendra-5a6b7c8d/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:kushendra@example.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-member">
-                        <img src="{image_base64s['shafi'] if image_base64s['shafi'] else 'https://via.placeholder.com/200'}" 
-                             alt="Team Member 3" 
-                             class="profile-image">
-                        <h3 class="profile-name">Mohammed Shafi Omair</h3>
-                        <p class="profile-title">Team Member<br>160722733004</p>
-                        <div class="social-links">
-                            <a href="https://github.com/mohammedshafi" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/mohamed-shafi-omair-986104295/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:Ms.omair22@gmail.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
                 </div>
                 <p class="bio-text">
-                    Hello! We're a team of Computer Science students from Methodist College of Engineering and Technology, Hyderabad—Amer Ali Khan, Mohammed Shafi Omair, and Yellam Kushendra. We created Smart AI Resume Builder & Analyzer as part of our mini-project to help job seekers build and optimize their resumes using the power of AI.
-With our shared interest in software development and machine learning, we built this platform to make resume creation smarter, faster, and more effective. Whether you're a fresher or a professional, our tool is designed to help you stand out and land better opportunities.
+                    Hello! I'm Amer Ali Khan, a Computer Science student. I created the Smart AI-Powered Resume Intelligence System as part of my mini-project to help job seekers build and optimize their resumes using the power of AI.
+With my passion for software development and machine learning, I built this platform to make resume creation smarter, faster, and more effective. Whether you're a fresher or a professional, this tool is designed to help you stand out and land better opportunities.
                 </p>
             </div>
         """, unsafe_allow_html=True)
@@ -1590,7 +1560,7 @@ With our shared interest in software development and machine learning, we built 
                 <i class="fas fa-lightbulb vision-icon"></i>
                 <h2 class="vision-title">Our Vision</h2>
                 <p class="vision-text">
-                    "AI Resume Builder & Analyzer represents my vision of democratizing career advancement through technology. 
+                    "AI-Powered Resume Intelligence System represents my vision of democratizing career advancement through technology. 
                     By combining cutting-edge AI with intuitive design, this platform empowers job seekers at 
                     every career stage to showcase their true potential and stand out in today's competitive job market."
                 </p>
@@ -2284,7 +2254,7 @@ With our shared interest in software development and machine learning, we built 
         st.markdown("""
             <div class="feedback-header">
                 <h1>📣 Your Voice Matters!</h1>
-                <p>Help us improve AI Resume Builder & Analyzer with your valuable feedback</p>
+                <p>Help us improve AI-Powered Resume Intelligence System with your valuable feedback</p>
             </div>
         """, unsafe_allow_html=True)
 
@@ -2305,7 +2275,7 @@ With our shared interest in software development and machine learning, we built 
         
         # Hero Section
         hero_section(
-            "AI Resume Builder & Analyzer",
+            "AI-Powered Resume Intelligence System",
             "Transform your career with AI-powered resume analysis and building. Get personalized insights and create professional resumes that stand out."
         )
         
@@ -2374,7 +2344,7 @@ With our shared interest in software development and machine learning, we built 
         # Admin login/logout in sidebar
         with st.sidebar:
             st_lottie(self.load_lottie_url("https://assets5.lottiefiles.com/packages/lf20_xyadoh9h.json"), height=200, key="sidebar_animation")
-            st.title("AI Resume Builder & Analyzer")
+            st.title("AI-Powered Resume Intelligence System")
             st.markdown("---")
             
             # Navigation buttons
