@@ -1,4 +1,4 @@
-# AI-Resume-Builder-and-Analyzer
+# AI-Powered Resume Intelligence System
 
 AI-Powered Resume Intelligence System is an intelligent web-based tool designed to streamline the resume creation and optimization process. It allows users to effortlessly generate ATS-friendly resumes, tailored to specific job roles using AI. Additionally, it features a powerful resume analyzer that evaluates resumes against job descriptions.
 
